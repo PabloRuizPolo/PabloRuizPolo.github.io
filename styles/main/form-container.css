@@ -1,0 +1,38 @@
+.form-container {
+  background: linear-gradient(
+    180deg,
+    rgba(66, 19, 39, 1) 0%,
+    rgba(101, 86, 141, 1) 47%,
+    rgba(82, 82, 255, 1) 100%
+  );
+  box-shadow: inset 3px 3px 0 #7efd42, inset -3px 3px 0 #7efd42,
+    inset 3px -3px 0 #7efd42;
+  height: 38dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 34px;
+  padding-bottom: 26px;
+}
+
+.form-container h2 {
+  color: #3eed99;
+}
+
+.form-container h3 {
+  text-align: center;
+}
+
+.dinamic-form-botton {
+  background-color: #7efd42;
+  border: solid 1px white;
+  padding: 1%;
+  max-width: 80%;
+  border-radius: 10px;
+}
+.dinamic-form-botton:hover {
+  background-color: black;
+  color: #fdcd3e;
+  animation: none;
+}

@@ -1,0 +1,250 @@
+.app-description {
+  width: 100%;
+  margin: 0;
+  padding: 8px;
+  background: linear-gradient(
+    180deg,
+    rgba(37, 37, 37, 1) 0%,
+    rgba(39, 25, 53, 1) 32%,
+    rgba(7, 39, 26, 1) 100%
+  );
+}
+.app-description .title {
+  width: 100%;
+}
+
+.main-app-section {
+  margin-top: 21px;
+  display: flex;
+  flex-direction: row;
+  align-items: normal;
+  justify-content: center;
+  padding: 0px 5%;
+}
+.video-app-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+.video-app-container p {
+  color: #ffffff99;
+  font-size: 0.7em;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.video-app-container img {
+  position: relative;
+  height: 472px;
+  width: auto;
+}
+
+.video-app-container video {
+  width: 197px;
+  position: absolute;
+  height: 377px;
+  margin-top: 46px;
+}
+
+.banner-content {
+  display: none;
+  width: 48%;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 4%;
+  font-size: 1.8em;
+  border: solid 1px;
+  border-radius: 15px;
+  margin: 8% 0;
+}
+.banner-content ul li {
+  list-style: none;
+  margin-top: 15%;
+}
+.app-details-wrapper {
+  width: 90%;
+  margin: 4% auto;
+  margin-bottom: 0;
+}
+
+.app-div-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 13%;
+  display: grid;
+  grid-template-columns: (1, 1fr);
+}
+
+.app-div-list li {
+  margin-top: 13%;
+}
+
+.app-div {
+  margin: auto;
+  padding: 2%;
+  height: auto;
+  width: 51%;
+  border: solid 1px white;
+  border-radius: 13px;
+  color: white;
+  background: linear-gradient(
+    180deg,
+    rgb(221 0 255 / 36%) 0%,
+    rgba(101, 86, 141, 1) 47%,
+    rgba(82, 82, 255, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.app-div-title {
+  text-align: center;
+  font-size: 0.9em;
+  color: rgb(191 251 251);
+  text-decoration: underline;
+}
+
+.app-div img {
+  width: 100%;
+  height: auto;
+  max-width: 172px;
+  max-height: 127px;
+  border-radius: 10px;
+}
+
+.app-div-text {
+  font-size: 0.7em;
+  text-align: center;
+  margin: auto 5%;
+}
+
+@media (min-width: 600px) {
+  .banner-content {
+    display: flex;
+  }
+  .main-app-section {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .app-description .title {
+    font-size: 1.9em;
+  }
+
+  .app-div {
+    width: 60%;
+  }
+  .app-div-title {
+    font-size: 1.2em;
+  }
+  .app-div img {
+    max-width: 200px;
+    max-height: 174px;
+  }
+  .app-div-text {
+    font-size: 0.9em;
+  }
+}
+
+@media (width >1023px) {
+  .app-description .title {
+    font-size: 2.4em;
+  }
+
+  .app-div img {
+    max-width: 205px;
+    max-height: 188px;
+  }
+  .app-div-title {
+    font-size: 1.4em;
+  }
+  .app-div-text {
+    font-size: 1em;
+  }
+  .app-div img {
+    max-width: 200px;
+    max-height: 174px;
+  }
+  .video-app-container video {
+    width: 253px;
+    height: 527px;
+  }
+  .video-app-container img {
+    height: 621px;
+    width: auto;
+  }
+  .banner-content {
+    font-size: 2.2em;
+  }
+}
+@media (width >1500px) {
+  .main-app-section {
+    padding: 0 10%;
+  }
+  .app-description .title {
+    font-size: 2.7em;
+  }
+}
+
+@media (width >767px) {
+  .app-div-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .app-div-list li {
+    margin-top: 5%;
+    margin-top: 10%;
+  }
+}
+
+.banner-content h3 {
+  animation-name: vibration;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
+}
+
+@keyframes vibration {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.bi-arrow-bar-up {
+  animation-name: moveDown;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(
+      10px
+    ); /* Adjust the value for the desired movement distance */
+  }
+}
